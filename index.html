@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,600&family=Urbanist:ital,wght@0,200;0,400;0,500;1,200;1,300&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+    <title>ShippingKart</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="icon">ShippingKart</h1>
+     
+        <div class="staff-section">
+            <h2>
+                Staff Management
+            </h2>
+        
+           <form id="addStaffForm">
+             <label for="staffName"> Staff Name:</label>
+             <input type="text" id="staffName" name="staffName">
+
+            <label for="operationDays"> Operation Days:</label>
+            <input type="text" id="operationDays" name="operationDays" placeholder="e.g., Monday,Tuesday">
+
+            <label for="operationTime"> Operation Time:</label>
+            <input type="text" id="operationTime" name="operationTime" placeholder="e.g, 10am-6pm">
+
+            <button type="button" onclick="addStaff()">Add Staff</button>
+
+
+           </form>
+
+           <ul id="staffList"></ul>
+
+        </div>    
+
+        <div class="availability-section">
+            <h2>Check Staff Availability</h2>
+
+            <form id="availabilityForm">
+                <label for="deliveryDay">Delivery Day:</label>
+                <input type="text" name="deliveryDay" id="deliveryDay" placeholder="e.g, Tuesday">
+
+                <label for="deliveryTime"> Delivery Time:</label>
+                <input type="text" name="deliveryTime" id="deliveryTime" placeholder="e.g, 4pm">
+
+                <button type="button"> Check Availability</button>
+
+            </form>
+
+            <ul id="availableStafflist"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
